@@ -1,0 +1,46 @@
+#banner {
+  padding: 50px 100px; }
+  #banner .box .top {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 47px;
+    margin-bottom: 26px; }
+    #banner .box .top .left {
+      min-width: unset;
+      background-color: unset;
+      background-clip: unset;
+      border: unset;
+      border-radius: unset; }
+      #banner .box .top .left .card-img-top {
+        width: 280px;
+        margin-bottom: 47px; }
+      #banner .box .top .left .card-body {
+        padding: 0; }
+        #banner .box .top .left .card-body .card-title {
+          margin-bottom: 15px; }
+        #banner .box .top .left .card-body .card-text {
+          font-weight: 400;
+          line-height: 32px;
+          margin-bottom: 0;
+          white-space: pre-line; }
+    #banner .box .top .right {
+      position: relative; }
+      #banner .box .top .right .text {
+        position: absolute;
+        top: -16px;
+        left: 0;
+        font-size: 49px;
+        font-weight: 400;
+        letter-spacing: 4.4px;
+        text-align: left;
+        text-align-last: right;
+        white-space: pre-line;
+        margin-bottom: 0;
+        width: 100%; }
+      #banner .box .top .right .img {
+        width: 100%;
+        padding-top: 46px; }
+  #banner .box .bottom {
+    border-top: 1px solid var(--c-main);
+    border-bottom: 1px solid var(--c-main);
+    padding: 22px 6px; }

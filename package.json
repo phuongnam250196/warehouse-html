@@ -1,0 +1,20 @@
+{
+  "name": "springs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test-c": "npm run scss-compile",
+    "scss-compile": "node-sass -rw css/ -o css/",
+    "watch": "npm run scss-compile"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "scss-compile": "^0.1.7"
+  },
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  }
+}

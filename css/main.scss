@@ -1,0 +1,57 @@
+:root {
+    --c-red: #C40000;
+    --c-main: #004445;
+    --c-text: #000;
+    --c-gray: #FCF6FF;
+    --c-gray-2: #F6F6F6;
+    --c-gray-3: #D9D9D9;
+    --c-white: #fff;
+}
+
+html {
+    box-sizing: border-box
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    font-size: 16px;
+    color: var(--c-main);
+    background-color: var(--c-white);
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.wrapper {
+    width: 1200px;
+    background-color: var(--c-white);
+    margin: 0 auto;
+}
+
+.title-base {
+    font-weight: 700;
+    font-size: 28px;
+}
+
+@import './header.scss';
+@import './banner.scss';
+@import './footer.scss';
+@import './contact.scss';
+@import './service.scss';
+@import './impress.scss';
+@import './company.scss';

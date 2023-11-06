@@ -1,0 +1,40 @@
+#impress {
+    background-color: var(--c-gray);
+    padding: 90px;
+    padding-right: 0;
+    margin-left: 100px;
+    box-sizing: border-box;
+
+    .content {
+        padding-right: 90px;
+        .title {
+            margin-bottom: 16px;
+            white-space: pre-line;
+        }
+        .text {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 32px;
+        }
+    }
+
+    .list {
+        .right {
+            .img {
+                width: 100%;
+            }
+            .text {
+                font-weight: 400;
+                line-height: 32px;
+                white-space: pre-line;
+            }
+        }
+    }
+}
+
+.advertise {
+    padding: 80px 100px;
+    img {
+        width: 100%;
+    }
+}
