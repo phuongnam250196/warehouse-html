@@ -1,6 +1,8 @@
 :root {
     --c-red: #C40000;
     --c-main: #004445;
+    --c-green-2: #2D4961;
+    --c-green-3: #122F4B;
     --c-text: #000;
     --c-gray: #FCF6FF;
     --c-gray-2: #F6F6F6;
@@ -38,8 +40,13 @@ html, body {
 }
 
 .wrapper {
-    width: 1200px;
+    max-width: 1200px;
     background-color: var(--c-white);
+    margin: 0 auto;
+}
+
+.container-c {
+    max-width: 1200px;
     margin: 0 auto;
 }
 

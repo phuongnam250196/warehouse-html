@@ -1,0 +1,41 @@
+#header {
+  padding: 17px 58px; }
+  #header .container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+    align-items: flex-start; }
+  #header .navbar {
+    padding: 0; }
+    #header .navbar .navbar-brand {
+      width: 123px;
+      margin-right: 0;
+      display: inline-block; }
+      #header .navbar .navbar-brand img {
+        width: 100%; }
+    #header .navbar .collapse {
+      padding-top: 9px; }
+      #header .navbar .collapse .navbar-nav {
+        margin-left: auto;
+        padding-right: 18px; }
+        #header .navbar .collapse .navbar-nav .nav-item .nav-link {
+          color: var(--c-main);
+          padding-left: 18px;
+          padding-right: 18px; }
+      #header .navbar .collapse .btn-contact {
+        width: 120px;
+        height: 40px;
+        background-color: var(--c-main);
+        color: var(--c-white);
+        font-size: 15px;
+        font-weight: 400;
+        display: inline-flex;
+        border: 1px solid var(--c-main);
+        border-radius: 0;
+        line-height: 1;
+        justify-content: center;
+        align-items: center; }
+        #header .navbar .collapse .btn-contact:hover {
+          background-color: var(--c-white);
+          color: var(--c-main); }
+        #header .navbar .collapse .btn-contact:focus {
+          box-shadow: unset; }

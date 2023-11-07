@@ -2,11 +2,12 @@
     background-color: var(--c-gray);
     padding: 90px;
     padding-right: 0;
-    margin-left: 100px;
+    margin-left: calc((100vw - 1236px)/2);
     box-sizing: border-box;
 
     .content {
         padding-right: 90px;
+        margin-bottom: 34px;
         .title {
             margin-bottom: 16px;
             white-space: pre-line;
@@ -19,21 +20,93 @@
     }
 
     .list {
-        .right {
-            .img {
-                width: 100%;
+        .title-box {
+            line-height: 24px;
+            font-weight: 400;
+            margin-bottom: 44px;
+            font-size: 16px;
+        }
+        .group {
+            display: flex;
+            justify-content: space-between;
+            
+            .left {
+                .lt {
+                    padding-top: 16px;
+                    padding-left: 0;
+                    margin-bottom: 0;
+                    .lt-item {
+                        position: relative;
+                        display: flex;
+
+                        &::before {
+                            position: absolute;
+                            left: 117px;
+                            top: 9px;
+                            content: " ";
+                            border-radius: 500%;
+                            background: var(--c-white);
+                            border: 1px solid var(--c-green-2);
+                            height: 15px;
+                            width: 15px;
+                            z-index: 9;
+                        }
+
+                        &::after {
+                            content: " ";
+                            position: absolute;
+                            left: 124px;
+                            top: 0;
+                            height: 100%;
+                            width: 1px;
+                            background: var(--c-green-3);
+                        }
+
+                        &:first-child {
+                            padding-top: 10px;
+                            &::before {
+                                display: none;
+                            }
+                        }
+
+                        &:last-child {
+                            padding-bottom: 20px;
+                        }
+
+                        .title {
+                            width: 93px;
+                            text-align: right;
+                            line-height: 32px;
+                            font-weight: 400;
+                        }
+
+                        .text {
+                            width: calc(100% - 93px);
+                            padding-left: 60px;
+                            line-height: 32px;
+                            font-weight: 400;
+                            white-space: pre-line;
+                        }
+                    }
+                }
             }
-            .text {
-                font-weight: 400;
-                line-height: 32px;
-                white-space: pre-line;
+
+            .right {
+                .img {
+                    width: 427px;
+                }
+                .text {
+                    font-weight: 400;
+                    line-height: 32px;
+                    white-space: pre-line;
+                }
             }
         }
     }
 }
 
 .advertise {
-    padding: 80px 100px;
+    padding: 80px 0;
     img {
         width: 100%;
     }
