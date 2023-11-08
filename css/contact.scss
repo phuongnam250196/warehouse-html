@@ -3,7 +3,7 @@
     padding-top: 76px;
     padding-bottom: 63px;
     
-    .box{
+    .box {
         width: 639px;
         margin: 0 auto;
 
@@ -74,6 +74,74 @@
                 &:hover {
                     color: var(--c-gray-3);
                     background-color: var(--c-main);
+                }
+            }
+        }
+    }
+
+    @media (max-width: 575.98px) {
+        padding: 66px 0 56px;
+
+        .box {
+            width: 100%;
+            margin: 0 auto;
+
+            .box-title {
+                text-align: center;
+                .title {
+                    margin-bottom: 29px;
+                }
+                .desc {
+                    width: 254px;
+                    margin: 0 auto 22px;
+                }
+                .ul {
+                    padding: 17px 13px;
+                    padding-left: 26px;
+                    list-style-position: outside;
+                    margin-bottom: 32px;
+                }
+            }
+
+            .form {
+                .form-item {
+                    margin-bottom: 32px;
+                }
+                .form-label {
+                    font-weight: 700;
+                    margin-bottom: 7px;
+                    line-height: 1;
+                }
+                .form-control {
+                    height: 41px;
+                    border: 1px solid var(--c-gray-3);
+                    background-color: var(--c-white);
+                    border-radius: 4px;
+                    &:focus {
+                        box-shadow: unset;
+                    }
+                    &.textarea {
+                        height: 122px;
+                    }
+                }
+                .btn {
+                    width: 293px;
+                    height: 73px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 22px;
+                    font-weight: 700;
+                    color: var(--c-main);
+                    background-color: var(--c-gray-3);
+                    border-radius: 100px;
+                    border: unset;
+                    margin: 0 auto;
+                    
+                    &:hover {
+                        color: var(--c-gray-3);
+                        background-color: var(--c-main);
+                    }
                 }
             }
         }

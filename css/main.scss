@@ -3,6 +3,7 @@
     --c-main: #004445;
     --c-green-2: #2D4961;
     --c-green-3: #122F4B;
+    --c-green-4: #44ABA5;
     --c-text: #000;
     --c-gray: #FCF6FF;
     --c-gray-2: #F6F6F6;
@@ -17,7 +18,7 @@ html {
 *,
 *:before,
 *:after {
-    box-sizing: inherit
+    box-sizing: inherit;
 }
 
 * {
@@ -25,7 +26,13 @@ html {
     padding: 0;
 }
 
+p {
+    margin-bottom: 0;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.cdnfonts.com/css/times-new-roman');
 
 body {
     margin: 0;
@@ -46,8 +53,12 @@ html, body {
 }
 
 .container-c {
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
+
+    @media (max-width: 575.98px) {
+        padding: 0 22px;
+    }
 }
 
 .title-base {

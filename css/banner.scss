@@ -1,10 +1,10 @@
 #banner {
-    padding: 0 100px 50px;
+    padding: 0 0 50px;
     .box {
         .top {
             display: flex;
             justify-content: space-between;
-            column-gap: 47px;
+            column-gap: 69px;
             margin-bottom: 26px;
 
             .left {
@@ -35,16 +35,31 @@
 
                 .text {
                     position: absolute;
-                    top: -16px;
+                    top: -18px;
                     left: 0;
                     font-size: 49px;
                     font-weight: 400;
                     letter-spacing: 4.4px;
                     text-align: left;
                     text-align-last: right;
-                    white-space: pre-line;
                     margin-bottom: 0;
                     width: 100%;
+                    font-family: 'Times New Roman', sans-serif;
+                    line-height: 0.9;
+                    z-index: 9;
+
+                    span {
+                        &.up {
+                            text-align: left;
+                        }
+                        &.down {
+                            text-align: right;
+                        }
+                        &.u {
+                            font-size: 65px;
+                            letter-spacing: 5.85px;
+                        }
+                    }
                 }
 
                 .img {
@@ -58,6 +73,77 @@
             border-top: 1px solid var(--c-main);
             border-bottom: 1px solid var(--c-main);
             padding: 22px 6px;
+            .title {
+                font-family: 'Times New Roman', sans-serif;
+            }
+        }
+    }
+
+    @media (max-width: 575.98px) {
+        padding: 40px 0 50px;
+
+        .container-c {
+            padding: 0;
+        }
+        .box {
+            position: relative;
+            .top {
+                display: flex;
+                flex-direction: column-reverse;
+                margin-bottom: 20px;
+    
+                .left {
+                    position: unset;
+                    padding: 0 22px;
+                    .card-img-top {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 140px;
+                        margin-bottom: 0;
+                    }
+                    .card-body {
+                        padding-top: 20px;
+                    }
+                }
+                .right {
+                    position: relative;
+                    
+                    .text {
+                        width: 243px;
+                        position: absolute;
+                        top: -40px;
+                        left: unset;
+                        right: 22px;
+                        font-size: 24px;
+                        letter-spacing: 2.17px;
+                        text-align-last: auto;
+                        span {
+                            &.up {
+                                text-align: left;
+                            }
+                            &.down {
+                                text-align: right;
+                            }
+                            &.u {
+                                font-size: 31px;
+                                letter-spacing: 2.85px;
+                            }
+                        }
+                    }
+    
+                    .img {
+                        padding-top: 20px;
+                    }
+                }
+            }
+    
+            .bottom {
+                border-top: 1px solid var(--c-main);
+                border-bottom: 1px solid var(--c-main);
+                padding: 22px 6px;
+                margin: 0 21px;
+            }
         }
     }
 }
