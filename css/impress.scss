@@ -1,7 +1,7 @@
 #impress {
     background-color: var(--c-gray);
     padding: 90px;
-    padding-right: 0;
+    padding-right: calc((100vw - 1024px)/2);
     margin-left: calc((100vw - 1024px)/2);
     box-sizing: border-box;
     // overflow: hidden;
