@@ -66,6 +66,25 @@ html, body {
     font-size: 28px;
 }
 
+p {
+    margin-bottom: 0; }
+  
+  .white-space {
+    white-space: pre-line;
+  }
+  .ele-container-c {
+    padding: 0;
+    .ele-title {
+      .elementor-heading-title {
+        height: 60px; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+      }
+    }
+  }
+
 @import './header.scss';
 @import './banner.scss';
 @import './footer.scss';
